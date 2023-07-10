@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul.nav-bar {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: gray;
+            width: 100%;
+
+        }
+
+        ul.nav-bar li {
+            float: left;
+
+        }
+
+        ul.nav-bar li a {
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            color: black;
+
+
+        }
+
+        ul.nav-bar li a:hover:not(.active) {
+            background-color: black;
+            color: white;
+        }
+
+        ul.nav-bar li a.active {
+            color: white;
+        }
+
+        .active {
+            background-color: green;
+        }
+
+        @media (max-width:500px) {
+            ul.nav-bar li {
+                float: none;
+                text-align: center;
+            }
+        }
+
+        @media (max-width:500px) {
+            div.membuat-jus {
+                border: 20px solid #1d2a35;
+                padding: 20px;
+                width: 100px;
+                background-color: #2D4356;
+                margin: auto;
+            }
+        }
+
+
+
+        /* style untuk konten */
+        img {
+            width: 250px;
+            margin-left: 65px;
+
+        }
+
+        div.membuat-jus {
+            border: 10px solid #1d2a35;
+            padding: 20px;
+            width: 380px;
+            background-color: #2D4356;
+            margin: auto;
+        }
+
+        h1.title {
+            text-align: center
+        }
+
+        .wortel {
+            background-color: #4b6774;
+            padding: 20px;
+        }
+
+        .wortel li {
+            background-color: #cc6f6f;
+            padding: 10px;
+        }
+
+        h1.title,
+        h2 {
+            color: #c9bebb;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar-start -->
+    <div class="navigation">
+        <ul class="nav-bar">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Contack</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <!-- Navbar-end -->
+
+    <!-- konten -->
+    <h1> Selamat datang di Website saya</h1>
+
+    <div class="membuat-jus">
+        <h1 class="title"> Membuat Jus Wortel</h1>
+
+        <!-- foto jus wortel -->
+        <img src="./jus-wortel.jpg" alt="Jus wortel">
+
+        <!-- alat dan bahan -->
+        <div class="alat-bahan">
+            <h2>Alat dan Bahan</h2>
+            <ul class="wortel">
+                <li>Wortel</li>
+                <li>Air</li>
+                <li>Gula</li>
+                <li>Blender</li>
+                <li>Gelas</li>
+            </ul>
+        </div>
+
+        <!-- cara pembuatan -->
+        <h2> Langkah Pembuatan</h2>
+        <ol class="wortel">
+            <li>Pertama kupas wortel dan cuci sampai
+                bersih.
+            </li>
+            <li>Setelah dicuci, potong-potong wortel sampai ukuran
+                yang kalian mau.
+            </li>
+            <li>
+                Siapkan blender, Masukkan gula, air, dan wortel ke dalam blender
+            </li>
+            <li>
+                Blender sampai halus.
+            </li>
+            <li>
+                Jika dirasa sudah cukup halus, tuangkan ke dalam gelas.
+            </li>
+            <li>
+                Jus wortel-pun siap dinikmati.
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>
